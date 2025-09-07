@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  width: 1px; /* Largura da barra */
+  height: 1px; /* Altura da barra horizontal */
+}
 /* Style the body */
 body {
   font-family: 'Source Code Pro', monospace;
@@ -20,6 +23,7 @@ body {
   background-color: #50190f;
   padding: 10px;
   height: 100vh;
+  overflow: auto;
 }
 
 .side h1 {
@@ -28,6 +32,11 @@ body {
 }
 .side h2 {
   color: rgb(255, 253, 253);
+}
+.side h6 {
+  text-align: center;
+  color: rgb(255, 253, 253);
+  margin-top: -10px;
 }
 
 .side p {
